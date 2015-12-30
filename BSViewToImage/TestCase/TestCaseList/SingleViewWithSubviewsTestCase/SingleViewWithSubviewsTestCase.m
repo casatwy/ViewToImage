@@ -14,18 +14,18 @@
 #pragma mark - TestCaseProtocol
 - (UIImageView *)generateImageView
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 600)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 500, 1000)];
     
-    UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 500, 300)];
     subView.backgroundColor = [UIColor redColor];
     [view addSubview:subView];
     
     UIImage *image = [UIImage imageNamed:@"testImage"];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 300, 400)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 300, 500, 400)];
     imageView.image = image;
     [view addSubview:imageView];
     
-    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(0, 500, 300, 100)];
+    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(0, 700, 500, 300)];
     subview2.backgroundColor = [UIColor blueColor];
     [view addSubview:subview2];
     

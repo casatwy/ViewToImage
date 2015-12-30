@@ -23,11 +23,20 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     if ([self isKindOfClass:[UIScrollView class]]) {
+        UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, selfSize.width, selfSize.height)];
+        [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [contentView addSubview:obj];
+        }];
+        [contentView.layer renderInContext:context];
+        [contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [self addSubview:obj];
+        }];
     } else {
         [self.layer renderInContext:context];
     }
     
     UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     
     return resultImage;
 }

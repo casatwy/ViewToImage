@@ -98,8 +98,8 @@
 			children = (
 				4A0B56D81C347E1A0042EC87 /* CommonHeader.h */,
 				4A0B56C41C3476400042EC87 /* BSViewToImage */,
-				4A0B56D31C347DD10042EC87 /* TestCase */,
 				4A0B56CB1C347C540042EC87 /* ResultViewController */,
+				4A0B56D31C347DD10042EC87 /* TestCase */,
 				4A0B56B01C3476210042EC87 /* AppDelegate.h */,
 				4A0B56B11C3476210042EC87 /* AppDelegate.m */,
 				4A0B56B31C3476210042EC87 /* ViewController.h */,
