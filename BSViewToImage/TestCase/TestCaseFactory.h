@@ -1,14 +1,13 @@
 //
-//  ViewController.h
+//  TestCaseFactory.h
 //  BSViewToImage
 //
 //  Created by casa on 15/12/30.
 //  Copyright © 2015年 casa. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface TestCaseFactory : NSObject
 
 @end
-
