@@ -16,6 +16,10 @@
 		4A0B56C71C3476660042EC87 /* UIView+ViewToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56C61C3476660042EC87 /* UIView+ViewToImage.m */; };
 		4A0B56CF1C347C540042EC87 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56CD1C347C540042EC87 /* ResultViewController.m */; };
 		4A0B56D71C347DD10042EC87 /* TestCaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56D51C347DD10042EC87 /* TestCaseFactory.m */; };
+		4A0B56E71C3486F30042EC87 /* ScrollViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56E11C3486F30042EC87 /* ScrollViewTestCase.m */; };
+		4A0B56E81C3486F30042EC87 /* SingleViewTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56E51C3486F30042EC87 /* SingleViewTestCase.m */; };
+		4A0B56EB1C3487440042EC87 /* SingleViewLargerThanScreenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56EA1C3487440042EC87 /* SingleViewLargerThanScreenTestCase.m */; };
+		4A0B56EE1C3487520042EC87 /* SingleViewWithSubviewsTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B56ED1C3487520042EC87 /* SingleViewWithSubviewsTestCase.m */; };
 		C00C49F4D4516A8D73DF3CF7 /* libPods-BSViewToImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF624DAC9940E6A64AC5029 /* libPods-BSViewToImage.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,14 @@
 		4A0B56D41C347DD10042EC87 /* TestCaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseFactory.h; sourceTree = "<group>"; };
 		4A0B56D51C347DD10042EC87 /* TestCaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseFactory.m; sourceTree = "<group>"; };
 		4A0B56D81C347E1A0042EC87 /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		4A0B56E01C3486F30042EC87 /* ScrollViewTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewTestCase.h; sourceTree = "<group>"; };
+		4A0B56E11C3486F30042EC87 /* ScrollViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTestCase.m; sourceTree = "<group>"; };
+		4A0B56E41C3486F30042EC87 /* SingleViewTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewTestCase.h; sourceTree = "<group>"; };
+		4A0B56E51C3486F30042EC87 /* SingleViewTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewTestCase.m; sourceTree = "<group>"; };
+		4A0B56E91C3487440042EC87 /* SingleViewLargerThanScreenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewLargerThanScreenTestCase.h; sourceTree = "<group>"; };
+		4A0B56EA1C3487440042EC87 /* SingleViewLargerThanScreenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewLargerThanScreenTestCase.m; sourceTree = "<group>"; };
+		4A0B56EC1C3487520042EC87 /* SingleViewWithSubviewsTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewWithSubviewsTestCase.h; sourceTree = "<group>"; };
+		4A0B56ED1C3487520042EC87 /* SingleViewWithSubviewsTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewWithSubviewsTestCase.m; sourceTree = "<group>"; };
 		8AF624DAC9940E6A64AC5029 /* libPods-BSViewToImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BSViewToImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D9B626D90ABEF398FC7166 /* Pods-BSViewToImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSViewToImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSViewToImage/Pods-BSViewToImage.release.xcconfig"; sourceTree = "<group>"; };
 		E87A597B8D4CDC6440CC0BC5 /* Pods-BSViewToImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSViewToImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BSViewToImage/Pods-BSViewToImage.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				4A0B56D81C347E1A0042EC87 /* CommonHeader.h */,
+				4A0B56C41C3476400042EC87 /* BSViewToImage */,
 				4A0B56D31C347DD10042EC87 /* TestCase */,
 				4A0B56CB1C347C540042EC87 /* ResultViewController */,
-				4A0B56C41C3476400042EC87 /* BSViewToImage */,
 				4A0B56B01C3476210042EC87 /* AppDelegate.h */,
 				4A0B56B11C3476210042EC87 /* AppDelegate.m */,
 				4A0B56B31C3476210042EC87 /* ViewController.h */,
@@ -140,8 +152,48 @@
 		4A0B56D61C347DD10042EC87 /* TestCaseList */ = {
 			isa = PBXGroup;
 			children = (
+				4A0B56DF1C3486F30042EC87 /* ScrollViewTestCase */,
+				4A0B56E21C3486F30042EC87 /* SingleViewLargerThanScreenTestCase */,
+				4A0B56E31C3486F30042EC87 /* SingleViewTestCase */,
+				4A0B56E61C3486F30042EC87 /* SingleViewWithSubviewsTestCase */,
 			);
 			path = TestCaseList;
+			sourceTree = "<group>";
+		};
+		4A0B56DF1C3486F30042EC87 /* ScrollViewTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B56E01C3486F30042EC87 /* ScrollViewTestCase.h */,
+				4A0B56E11C3486F30042EC87 /* ScrollViewTestCase.m */,
+			);
+			path = ScrollViewTestCase;
+			sourceTree = "<group>";
+		};
+		4A0B56E21C3486F30042EC87 /* SingleViewLargerThanScreenTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B56E91C3487440042EC87 /* SingleViewLargerThanScreenTestCase.h */,
+				4A0B56EA1C3487440042EC87 /* SingleViewLargerThanScreenTestCase.m */,
+			);
+			path = SingleViewLargerThanScreenTestCase;
+			sourceTree = "<group>";
+		};
+		4A0B56E31C3486F30042EC87 /* SingleViewTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B56E41C3486F30042EC87 /* SingleViewTestCase.h */,
+				4A0B56E51C3486F30042EC87 /* SingleViewTestCase.m */,
+			);
+			path = SingleViewTestCase;
+			sourceTree = "<group>";
+		};
+		4A0B56E61C3486F30042EC87 /* SingleViewWithSubviewsTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B56EC1C3487520042EC87 /* SingleViewWithSubviewsTestCase.h */,
+				4A0B56ED1C3487520042EC87 /* SingleViewWithSubviewsTestCase.m */,
+			);
+			path = SingleViewWithSubviewsTestCase;
 			sourceTree = "<group>";
 		};
 		F5579D5595612069C903D3D8 /* Frameworks */ = {
@@ -273,9 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0B56EE1C3487520042EC87 /* SingleViewWithSubviewsTestCase.m in Sources */,
+				4A0B56E81C3486F30042EC87 /* SingleViewTestCase.m in Sources */,
 				4A0B56C71C3476660042EC87 /* UIView+ViewToImage.m in Sources */,
+				4A0B56E71C3486F30042EC87 /* ScrollViewTestCase.m in Sources */,
 				4A0B56B51C3476210042EC87 /* ViewController.m in Sources */,
 				4A0B56B21C3476210042EC87 /* AppDelegate.m in Sources */,
+				4A0B56EB1C3487440042EC87 /* SingleViewLargerThanScreenTestCase.m in Sources */,
 				4A0B56CF1C347C540042EC87 /* ResultViewController.m in Sources */,
 				4A0B56D71C347DD10042EC87 /* TestCaseFactory.m in Sources */,
 				4A0B56AF1C3476210042EC87 /* main.m in Sources */,

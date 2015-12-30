@@ -9,8 +9,20 @@
 #ifndef CommonHeader_h
 #define CommonHeader_h
 
+#import <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSUInteger, TestCaseType) {
-    TestCaseTypeScrollView
+    TestCaseTypeScrollView,
+    TestCaseTypeSingleView,
+    TestCaseTypeSingleViewWithSubviews,
+    TestCaseTypeSingleViewLargerThanScreen
+    
 };
+
+@protocol TestCaseProtocol <NSObject>
+
+- (UIImageView *)generateImageView;
+
+@end
 
 #endif /* CommonHeader_h */

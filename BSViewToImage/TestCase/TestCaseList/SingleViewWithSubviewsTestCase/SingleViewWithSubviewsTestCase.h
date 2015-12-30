@@ -1,5 +1,5 @@
 //
-//  TestCaseFactory.h
+//  SingleViewWithSubviewsTestCase.h
 //  BSViewToImage
 //
 //  Created by casa on 15/12/30.
@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CommonHeader.h"
 
-@interface TestCaseFactory : NSObject
-
-- (id<TestCaseProtocol>)testCaseWithType:(TestCaseType)testCaseType;
+@interface SingleViewWithSubviewsTestCase : NSObject <TestCaseProtocol>
 
 @end

@@ -10,6 +10,6 @@
 
 @interface UIView (ViewToImage)
 
-- (UIImage *)imageWithView:(UIView *)view;
+- (UIImage *)transformToImage;
 
 @end

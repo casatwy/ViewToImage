@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <UIView+LayoutMethods.h>
 #import "CommonHeader.h"
+#import "ResultViewController.h"
 
 NSString * const kBSDataSourceItemKeyTestCaseType = @"kBSDataSourceItemKeyTestCaseType";
 NSString * const kBSDataSourceItemKeyTestCaseTitle = @"kBSDataSourceItemKeyTestCaseTitle";
@@ -37,6 +38,12 @@ NSString * const kBSDataSourceItemKeyTestCaseTitle = @"kBSDataSourceItemKeyTestC
 }
 
 #pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ResultViewController *resultViewController = [[ResultViewController alloc] init];
+    resultViewController.testCaseType =[self.dataSource[indexPath.row][kBSDataSourceItemKeyTestCaseType] unsignedIntegerValue];
+    [self.navigationController pushViewController:resultViewController animated:YES];
+}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -47,6 +54,7 @@ NSString * const kBSDataSourceItemKeyTestCaseTitle = @"kBSDataSourceItemKeyTestC
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.tag = [self.dataSource[indexPath.row][kBSDataSourceItemKeyTestCaseType] unsignedIntegerValue];;
     cell.textLabel.text = self.dataSource[indexPath.row][kBSDataSourceItemKeyTestCaseTitle];
     return cell;
@@ -70,8 +78,20 @@ NSString * const kBSDataSourceItemKeyTestCaseTitle = @"kBSDataSourceItemKeyTestC
         _dataSource = @[
                         @{
                             kBSDataSourceItemKeyTestCaseType:@(TestCaseTypeScrollView),
-                            kBSDataSourceItemKeyTestCaseTitle:@"scroll view test case >"
-                            }
+                            kBSDataSourceItemKeyTestCaseTitle:@"scroll view"
+                            },
+                        @{
+                            kBSDataSourceItemKeyTestCaseType:@(TestCaseTypeSingleView),
+                            kBSDataSourceItemKeyTestCaseTitle:@"single view"
+                            },
+                        @{
+                            kBSDataSourceItemKeyTestCaseType:@(TestCaseTypeSingleViewWithSubviews),
+                            kBSDataSourceItemKeyTestCaseTitle:@"single view with subviews"
+                            },
+                        @{
+                            kBSDataSourceItemKeyTestCaseType:@(TestCaseTypeSingleViewLargerThanScreen),
+                            kBSDataSourceItemKeyTestCaseTitle:@"single view larger than screen"
+                            },
                         ];
     }
     return _dataSource;
