@@ -142,9 +142,9 @@
 		4A0B56D31C347DD10042EC87 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				4A0B56D61C347DD10042EC87 /* TestCaseList */,
 				4A0B56D41C347DD10042EC87 /* TestCaseFactory.h */,
 				4A0B56D51C347DD10042EC87 /* TestCaseFactory.m */,
-				4A0B56D61C347DD10042EC87 /* TestCaseList */,
 			);
 			path = TestCase;
 			sourceTree = "<group>";
