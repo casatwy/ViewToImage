@@ -19,6 +19,10 @@
         selfSize = scrollView.contentSize;
     }
     
+    if (selfSize.width == 0 || selfSize.height == 0) {
+        return nil;
+    }
+    
     UIGraphicsBeginImageContext(selfSize);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
