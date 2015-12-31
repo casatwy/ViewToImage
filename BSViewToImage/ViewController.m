@@ -55,7 +55,6 @@ NSString * const kBSDataSourceItemKeyTestCaseTitle = @"kBSDataSourceItemKeyTestC
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.tag = [self.dataSource[indexPath.row][kBSDataSourceItemKeyTestCaseType] unsignedIntegerValue];;
     cell.textLabel.text = self.dataSource[indexPath.row][kBSDataSourceItemKeyTestCaseTitle];
     return cell;
 }
