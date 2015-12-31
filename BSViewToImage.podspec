@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BSViewToImage"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "make a image from view."
 
   s.description  = <<-DESC
