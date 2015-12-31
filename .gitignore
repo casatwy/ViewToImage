@@ -2,4 +2,5 @@ Podfile.lock
 Pods/
 BSViewToImage.xcworkspace/
 BSViewToImage.xcodeproj/xcuserdata/
+BSViewToImage.xcodeproj/project.xcworkspace/xcuserdata/
 a.sh
